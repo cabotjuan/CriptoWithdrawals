@@ -1,0 +1,171 @@
+.app-container {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 2rem;
+}
+
+.app-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem;
+}
+
+.app-form-input {
+  border-radius: 15px;
+  margin: 1rem;
+  border-style: none;
+  height: 30px;
+  width: 500px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: gray;
+}
+.textarea {
+  height: auto;
+}
+
+.app-form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e9b430;
+}
+
+.app-form-inline {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border-style: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn:disabled {
+  background: gray;
+  cursor: initial;
+}
+.btn:not([disabled]):hover {
+  transform: scale(1.05);
+}
+.primary {
+  background: #249336;
+}
+.secondary {
+  background: #248493;
+}
+
+.funds-container {
+  position: relative;
+  background: #4d4f55;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  opacity: 0.95;
+  margin: 1rem;
+  border: none;
+  color: white;
+  text-align: end;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.form-select {
+  border-radius: 15px;
+  margin: 1rem;
+  border-style: none;
+  height: 42px;
+  width: 90px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: gray;
+  background: white;
+}
+.token-icon {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.token-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.33rem;
+}
+
+.token-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.available-funds {
+  font-size: 1rem;
+  margin: -10px;
+  font-weight: 400;
+  color: white;
+}
+
+.available-funds-container {
+  display: inline-flex;
+  width: 90%;
+  justify-content: space-around;
+  background: #282c34;
+  height: 30px;
+  align-items: center;
+  margin-top: -1rem;
+  border-radius: 0 0 50px 50px;
+}
+
+.insuficient-funds {
+  font-size: 1rem;
+  margin: 1rem;
+  font-weight: bolder;
+  color: rgb(255, 50, 50);
+}
+
+.spinner {
+  border: 4px solid #e9b430c4;
+  border-left-color: transparent;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.withdrawal-response {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  margin: 1rem;
+  width: 100%;
+  text-align: center;
+}
